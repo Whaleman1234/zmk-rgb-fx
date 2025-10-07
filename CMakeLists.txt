@@ -9,6 +9,7 @@ target_sources(app PRIVATE src/behaviors/behavior_rgb_fx.c)
 
 target_sources(app PRIVATE src/fx/compose.c)
 target_sources(app PRIVATE src/fx/control_group.c)
+target_sources(app PRIVATE src/fx/heatmap.c)
 target_sources(app PRIVATE src/fx/linear_gradient.c)
 target_sources(app PRIVATE src/fx/ripple.c)
 target_sources(app PRIVATE src/fx/solid.c)
