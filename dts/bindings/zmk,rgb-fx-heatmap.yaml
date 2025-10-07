@@ -1,0 +1,39 @@
+# Copyright (c) 2024 Kuba Birecki
+# SPDX-License-Identifier: MIT
+
+description: |
+  Heatmap effect that visualizes key usage by color.
+  Keys change from cold (blue) to hot (red) based on how frequently they're pressed.
+
+compatible: "zmk,rgb-fx-heatmap"
+
+include: rgb-fx-base.yaml
+
+properties:
+  color-cold-hue:
+    type: int
+    default: 240
+    description: |
+      Hue value (0-359) for keys that haven't been pressed.
+      Default is 240 (blue).
+
+  color-hot-hue:
+    type: int
+    default: 0
+    description: |
+      Hue value (0-359) for the most frequently pressed keys.
+      Default is 0 (red).
+
+  saturation:
+    type: int
+    default: 100
+    description: |
+      Saturation value (0-100) for all keys.
+      100 = fully saturated colors, 0 = grayscale.
+
+  lightness:
+    type: int
+    default: 50
+    description: |
+      Lightness value (0-100) for all keys.
+      50 = normal brightness, 0 = black, 100 = white.
